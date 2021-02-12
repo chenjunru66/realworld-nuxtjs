@@ -1,6 +1,6 @@
 # @format
 
-name: Publish And Deploy
+name: Publish And Deploy DEMO
 on:
     push:
         tags:
@@ -51,7 +51,7 @@ jobs:
             - name: Deploy
               uses: appleboy/ssh-action@master
               with:
-                  #需要在GitHub仓库中配置secrets，对应服务器ip，端口用户名，密码
+                  #需要在GitHub仓库中配置secrets，对应服务器
                   host: ${{ secrets.HOST }}
                   username: ${{ secrets.USERNAME }}
                   password: ${{ secrets.PASSWORD }}
