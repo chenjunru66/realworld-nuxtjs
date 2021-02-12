@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-09 18:12:40
- * @LastEditTime: 2021-02-10 21:20:53
+ * @LastEditTime: 2021-02-12 19:58:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\realworld-nuxtjs\api\article.js
@@ -72,5 +72,13 @@ export const postComment = (param, slug) => {
         method: 'POST',
         url: `/api/articles/${slug}/comments`,
         data: param
+    })
+}
+
+// 删除文章
+export const deleteArticle = slug => {
+    return request({
+        method: 'DELETE',
+        url: `/api/articles/${slug}`
     })
 }
