@@ -3,7 +3,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-09 16:38:23
- * @LastEditTime: 2021-02-10 15:50:19
+ * @LastEditTime: 2021-02-11 11:23:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\realworld-nuxtjs\pages\home\index.vue
@@ -198,7 +198,7 @@ import {
 } from "@/api/article";
 import { getTags } from "@/api/tag";
 import { mapState } from "vuex";
-import store from "../../../vuex/01-statemanagement/src/components/05-easystate/store";
+
 export default {
 	name: "HomeIndex",
 	watchQuery: ["page", "tag", "tab"], //监听query中参数页面改变出发asyncData等方法，不然页面改变不会重新获取数据
